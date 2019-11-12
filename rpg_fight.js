@@ -1,16 +1,26 @@
-const attackValue = document.querySelector("#attackValue")
-//const winner = document.querySelector("#winner")
-let attack = 10
+const monsterAttackValue = document.querySelector("#monsterAttackValue");
+const monsterDefenseValue = document.querySelector("#monsterDefenseValue");
+const monsterHpValue = document.querySelector("#monsterHpValue");
+const monsterTypeValue = document.querySelector("#monsterTypeValue");
+let attack = 10;
+let defense = 5;
+let hp = 40;
 
 
 const hero = document.querySelector("#hero");
-const school = document.createElement("h1");
-school.setAttribute("id", "school");
-school.textContent = "Louisiana State University";
-hero.appendChild(school);
 
-function attackValueFunction() {
-  attackValue.textContent = attack;
+function monsterAttackValueFunction() {
+  monsterAttackValue.textContent = attack;
 }
 
-attackValueFunction();
+function monsterDefenseValueFunction() {
+  monsterDefenseValue.textContent = defense;
+}
+
+function monsterHpValueFunction() {
+  monsterHpValue.textContent = hp;
+}
+
+monsterAttackValueFunction();
+monsterDefenseValueFunction();
+monsterHpValueFunction();
